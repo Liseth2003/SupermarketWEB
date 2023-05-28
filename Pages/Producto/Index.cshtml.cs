@@ -16,12 +16,12 @@ namespace SupermarketWEB.Pages.Producto
             _context = context;
         }
 
-        public IList<Producto> Productos { get; set; } = default!;
+        public IList<Product> Productos { get; set; } = default!;
         public async Task OnGetAsync()
         {
             if (_context.Productos != null)
             {
-                Productos = await _context.Producto.ToListAsync();
+                Productos = await _context.Product.ToListAsync();
             }
         }
     }
