@@ -21,7 +21,7 @@ namespace SupermarketWEB.Pages.Producto
         }
 
         [BindProperty]
-        public Product Producto { get; set; } = default!;
+        public Producto Producto { get; set; } = default!;
 
         public async Task<IActionResult> OnPostAsync()
         {
